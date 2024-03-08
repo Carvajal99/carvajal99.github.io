@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para mi Novia</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f9f3f3;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      max-width: 90%;
+      padding: 30px;
+      background-color: #fff;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      color: #ff69b4;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    p {
+      color: #333;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #ff69b4;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #d43c83;
+    }
+    #mensaje {
+      color: #ff69b4;
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Para mi Princesa</h1>
+    <p>¡Hola amor!</p>
+    <p>Quiero aprovechar esta página para decirte cuánto significas para mí.</p>
+    <p>Eres lo mejor de mi vida y le das color a mis dias.</p>
+    <p>¡Me encantas como no imaginas!</p>
+    <button onclick="mostrarMensaje()">¡Presiona aqui!</button>
+    <p id="mensaje" style="display: none;"></p>
+  </div>
+
+  <script>
+    function mostrarMensaje() {
+      document.getElementById('mensaje').style.display = 'block';
+      document.getElementById('mensaje').innerText = '¡Te quiero con todo mi corazón!';
+    }
+  </script>
+
+</body>
+</html>
